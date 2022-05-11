@@ -11,9 +11,9 @@ SECRET_KEY = 'kionu28gx@nkfw!c3h$=77-iqadps+7*ve7qg6aoy^$y$o@7&q'
 
 DEBUG = False
 APPEND_SLASH = False
-ALLOWED_HOSTS = ['127.0.0.1']
-SECURE_HSTS_SECONDS = 1
-SECURE_SSL_REDIRECT = False
+ALLOWED_HOSTS = ['127.0.0.1', 'jassycliq.pythonanywhere.com']
+SECURE_HSTS_SECONDS = 600
+SECURE_SSL_REDIRECT = True
 SESSION_COOKIE_SECURE = False
 CSRF_COOKIE_SECURE = True
 
@@ -95,6 +95,7 @@ USE_I18N = True
 
 USE_TZ = True
 
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
